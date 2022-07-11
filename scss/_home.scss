@@ -52,7 +52,7 @@
           transition: all 0.3s;
 
           &:hover {
-            border-bottom: 3px solid #fff;
+            border-bottom: 3px solid $primary-color;
           }
         }
       }
@@ -70,5 +70,14 @@
     h1 {
       width: 500px;
     }
+  }
+}
+
+.about-us {
+  text-align: center;
+
+  .lead {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }

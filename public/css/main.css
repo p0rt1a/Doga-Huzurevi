@@ -2,16 +2,24 @@
   max-width: 1200px;
   margin: 0 auto; }
 
-.section-header {
+.section-title {
   text-align: center;
   width: 100%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0 0 2rem 0; }
+
+.lead {
+  padding: 2.5rem 0;
+  font-size: 1.2rem;
+  word-spacing: 2px; }
 
 .divide {
   content: "";
   height: 10px;
-  width: 600px;
-  background-color: #00ffab; }
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 4px solid #00ffab; }
 
 .bg-primary {
   background-color: #00ffab; }
@@ -19,17 +27,30 @@
 .bg-light {
   background-color: #e3fcbf; }
 
-.py-1 {
-  padding: 1rem 0; }
-
 .py-2 {
   padding: 2rem 0; }
 
-.m-1 {
-  margin: 1rem 0; }
+.py-3 {
+  padding: 3rem 0; }
 
 .m-2 {
   margin: 2rem 0; }
+
+.m-3 {
+  margin: 3rem 0; }
+
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 1.4rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s; }
+  .btn-primary:hover {
+    opacity: 0.7; }
+
+.btn-primary {
+  background-color: #00ffab;
+  color: #333; }
 
 * {
   margin: 0;
@@ -90,7 +111,7 @@ img {
         border-bottom: 3px transparent solid;
         transition: all 0.3s; }
         .main-navbar nav ul a:hover {
-          border-bottom: 3px solid #fff; }
+          border-bottom: 3px solid #00ffab; }
   .main-content {
     display: flex;
     width: 60%;
@@ -100,3 +121,9 @@ img {
     font-size: 2rem; }
     .main-content h1 {
       width: 500px; }
+
+.about-us {
+  text-align: center; }
+  .about-us .lead {
+    max-width: 800px;
+    margin: 0 auto; }
