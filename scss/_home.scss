@@ -8,7 +8,7 @@
   height: 100vh;
 
   & * {
-    z-index: 3;
+    z-index: 5;
   }
 
   &::before {
@@ -79,5 +79,59 @@
   .lead {
     max-width: 800px;
     margin: 0 auto;
+  }
+}
+
+.events {
+  text-align: center;
+
+  .event {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+
+    .image {
+      background-position: center;
+      background-size: cover;
+      height: 55vh;
+      flex: 1;
+    }
+
+    .image-1 {
+      background-image: $painting-bg;
+    }
+
+    .image-2 {
+      background-image: $social-bg;
+    }
+
+    .image-3 {
+      background-image: $dancing-bg;
+    }
+
+    .content {
+      flex: 1.7;
+      text-align: left;
+      padding: 0 1.3rem;
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: $dark-color;
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: #fff;
   }
 }

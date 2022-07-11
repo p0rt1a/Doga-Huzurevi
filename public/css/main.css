@@ -27,6 +27,9 @@
 .bg-light {
   background-color: #e3fcbf; }
 
+.py-1 {
+  padding: 1rem 0; }
+
 .py-2 {
   padding: 2rem 0; }
 
@@ -57,6 +60,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Prompt", sans-serif; }
 
@@ -79,7 +85,7 @@ img {
   background-repeat: no-repeat;
   height: 100vh; }
   .main * {
-    z-index: 3; }
+    z-index: 5; }
   .main::before {
     content: "";
     position: absolute;
@@ -127,3 +133,37 @@ img {
   .about-us .lead {
     max-width: 800px;
     margin: 0 auto; }
+
+.events {
+  text-align: center; }
+  .events .event {
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center; }
+    .events .event .image {
+      background-position: center;
+      background-size: cover;
+      height: 55vh;
+      flex: 1; }
+    .events .event .image-1 {
+      background-image: url(../img/painting.jpg); }
+    .events .event .image-2 {
+      background-image: url(../img/social.jpg); }
+    .events .event .image-3 {
+      background-image: url(../img/dancing.jpg); }
+    .events .event .content {
+      flex: 1.7;
+      text-align: left;
+      padding: 0 1.3rem; }
+      .events .event .content h1 {
+        font-size: 2rem; }
+
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #333; }
+  footer .social {
+    display: flex;
+    flex-direction: column; }
+  footer a {
+    color: #fff; }
