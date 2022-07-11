@@ -19,7 +19,7 @@
   height: 10px;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 4px solid #00ffab; }
+  border-bottom: 4px solid #14c38e; }
 
 .bg-primary {
   background-color: #00ffab; }
@@ -53,7 +53,7 @@
 
 .btn-primary {
   background-color: #00ffab;
-  color: #333; }
+  color: #222; }
 
 * {
   margin: 0;

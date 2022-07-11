@@ -22,7 +22,7 @@
   height: 10px;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 4px solid $primary-color;
+  border-bottom: 4px solid $secondary-color;
 }
 
 .bg-primary {
@@ -69,6 +69,6 @@
   &-primary {
     @extend %btn-shared;
     background-color: $primary-color;
-    color: #333;
+    color: #222;
   }
 }
