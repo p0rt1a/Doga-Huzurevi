@@ -1,5 +1,41 @@
 .container {
   max-width: $max-width;
-  padding: 10px 20px;
   margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.divide {
+  content: "";
+  height: 10px;
+  width: 600px;
+  background-color: $primary-color;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-light {
+  background-color: $light-color;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-1 {
+  margin: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem 0;
 }
