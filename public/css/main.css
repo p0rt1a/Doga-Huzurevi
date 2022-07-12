@@ -7,12 +7,14 @@
   width: 100%;
   text-transform: uppercase;
   font-size: 2rem;
-  padding: 0 0 2rem 0; }
+  padding: 0 0 2rem 0;
+  color: #333; }
 
 .lead {
   padding: 2.5rem 0;
   font-size: 1.2rem;
-  word-spacing: 2px; }
+  word-spacing: 2px;
+  color: #333; }
 
 .divide {
   content: "";
@@ -104,7 +106,7 @@ img {
   .main * {
     z-index: 5; }
   .main-navbar {
-    padding: 20px 0;
+    padding: 25px 0;
     position: fixed;
     width: 100%;
     background-color: rgba(72, 145, 115, 0.7); }
@@ -126,14 +128,16 @@ img {
         border-bottom: 3px transparent solid;
         transition: all 0.3s; }
         .main-navbar nav ul a:hover {
-          border-bottom: 3px solid #00ffab; }
+          border-bottom: 3px solid #fff; }
   .main-content {
     display: flex;
     width: 60%;
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 2rem; }
+    font-size: 2.1rem;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: #333; }
     .main-content h1 {
       width: 500px; }
 

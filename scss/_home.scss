@@ -45,7 +45,7 @@
   // }
 
   &-navbar {
-    padding: 20px 0;
+    padding: 25px 0;
     position: fixed;
     width: 100%;
     background-color: rgba(72, 145, 115, 0.7);
@@ -75,7 +75,7 @@
           transition: all 0.3s;
 
           &:hover {
-            border-bottom: 3px solid $primary-color;
+            border-bottom: 3px solid #fff;
           }
         }
       }
@@ -88,7 +88,9 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.1rem;
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: $dark-color;
 
     h1 {
       width: 500px;
