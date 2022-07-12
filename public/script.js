@@ -1,5 +1,6 @@
 let main = document.getElementById("main");
 let sliderPointers = document.querySelector(".slider-pointers");
+let pointerList = [];
 
 let imageList = [
   "alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg",
@@ -7,43 +8,49 @@ let imageList = [
   "vlad-sargu-ItphH2lGzuI-unsplash.jpg",
 ];
 
-let imageIndex = 0;
-let sliderIndex = -1;
+let index = -1;
 
-function changeImage() {
-  main.style.backgroundImage = `url(img/${imageList[imageIndex]})`;
-  imageIndex++;
-  if (imageIndex >= imageList.length) {
-    imageIndex = 0;
-  }
+function slide(ind) {
+  main.style.backgroundImage = `url(img/${imageList[ind]})`;
+  clearSelectedPointer();
+  sliderPointers.children[ind].classList.add("selected");
 }
 
-function changeSliderPointer() {
-  if (sliderIndex >= 0) {
-    sliderPointers.children[sliderIndex].classList.remove("selected");
+function clearSelectedPointer() {
+  for (let i = 0; i < pointerList.length; i++) {
+    sliderPointers.children[i].classList.remove("selected");
   }
-  sliderIndex++;
-  if (sliderIndex >= imageList.length) {
-    sliderIndex = 0;
-  }
-  sliderPointers.children[sliderIndex].classList.add("selected");
 }
 
 function myCoroutine() {
   setTimeout(() => {
-    console.log("Coroutine called");
-    changeImage();
-    changeSliderPointer();
+    index++;
+    if (index >= imageList.length) {
+      index = 0;
+    }
+    slide(index);
     myCoroutine();
   }, 5000);
 }
 
 window.addEventListener("load", () => {
-  myCoroutine();
   for (let i = 0; i < imageList.length; i++) {
     let html = `
         <a class="pointer"></a>
     `;
     sliderPointers.insertAdjacentHTML("beforeend", html);
   }
+  pointerList = document.querySelectorAll(".pointer");
+  createPointerEvents();
+  myCoroutine();
 });
+
+function createPointerEvents() {
+  for (let i = 0; i < pointerList.length; i++) {
+    pointerList[i].addEventListener("click", () => {
+      let pointerIndex = i;
+      slide(pointerIndex);
+      index = pointerIndex;
+    });
+  }
+}
