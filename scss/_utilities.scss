@@ -57,7 +57,7 @@
 
 %btn-shared {
   display: inline-block;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
   transition: all 0.3s;
@@ -72,5 +72,6 @@
     @extend %btn-shared;
     background-color: $primary-color;
     color: #222;
+    border: none;
   }
 }

@@ -46,7 +46,7 @@
 
 .btn-primary {
   display: inline-block;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
   transition: all 0.3s; }
@@ -55,7 +55,8 @@
 
 .btn-primary {
   background-color: #00ffab;
-  color: #222; }
+  color: #222;
+  border: none; }
 
 * {
   margin: 0;
@@ -77,6 +78,16 @@ ul {
 
 img {
   width: 100%; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  justify-content: center; }
+  form input {
+    padding: 0.5rem 0; }
 
 .main {
   transition: all 1s;
@@ -172,6 +183,17 @@ img {
       padding: 0 1.3rem; }
       .events .event .content h1 {
         font-size: 2rem; }
+
+.contact-us form input:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.contact-us form .content {
+  height: 120px; }
+
+.contact-us .btn-primary {
+  align-self: center;
+  padding: 1rem 1.2rem;
+  cursor: pointer; }
 
 footer {
   text-align: center;

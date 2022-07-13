@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -111,6 +111,32 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+      <h1 class="section-title">İletişim</h1>
+      <div class="divide"></div>
+      <div class="container py-2">
+        <form
+          action="https://formspree.io/m_alperenPolat@hotmail.com"
+          method="post"
+        >
+          <label for="contact-author">Ad Soyad</label>
+          <input
+            type="text"
+            name="contact-author"
+            id="contact-author"
+            required
+          />
+          <label for="reply-to">E-Mail</label>
+          <input type="email" name="reply-to" id="reply-to" required />
+          <label for="subject">Konu</label>
+          <input type="text" name="subject" id="subject" />
+          <label for="content">Mesaj</label>
+          <input type="text" name="content" id="content" class="content" />
+          <input type="submit" class="btn-primary" value="GÖNDER" />
+        </form>
       </div>
     </section>
 

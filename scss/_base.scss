@@ -24,3 +24,16 @@ ul {
 img {
   width: 100%;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  justify-content: center;
+
+  input {
+    padding: 0.5rem 0;
+  }
+}

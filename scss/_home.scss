@@ -148,6 +148,23 @@
   }
 }
 
+.contact-us {
+  form {
+    input:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      height: 120px;
+    }
+  }
+  .btn-primary {
+    align-self: center;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+  }
+}
+
 footer {
   text-align: center;
   color: #fff;
