@@ -124,21 +124,46 @@
     <section id="contact-us" class="contact-us">
       <h1 class="section-title">İletişim</h1>
       <div class="divide"></div>
-      <div class="container py-2">
+      <div class="contact">
+        <div class="contact-info">
+          <div class="info-content">
+            <i class="fa-solid fa-house fa-2x"></i>
+            <h3>
+              Sokak: 2202 No: 28, 29 Ekim <br />
+              Buca/İzmir
+            </h3>
+          </div>
+          <div class="info-content">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>ozeldogahuzurevi@gmail.com</h3>
+          </div>
+          <div class="info-content">
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>(555) 555 55 55</h3>
+          </div>
+        </div>
         <form action="https://formspree.io/f/mbjwvbzy" method="post">
-          <label for="contact-author">Ad Soyad</label>
-          <input
-            type="text"
-            name="contact-author"
-            id="contact-author"
-            required
-          />
-          <label for="reply-to">E-Mail</label>
-          <input type="email" name="reply-to" id="reply-to" required />
-          <label for="subject">Konu</label>
-          <input type="text" name="subject" id="subject" />
-          <label for="content">Mesaj</label>
-          <textarea name="content"></textarea>
+          <div class="form-panel">
+            <label for="contact-author">Ad Soyad</label>
+            <input
+              type="text"
+              name="contact-author"
+              id="contact-author"
+              required
+            />
+          </div>
+          <div class="form-panel">
+            <label for="reply-to">E-Mail</label>
+            <input type="email" name="reply-to" id="reply-to" required />
+          </div>
+          <div class="form-panel">
+            <label for="subject">Konu</label>
+            <input type="text" name="subject" id="subject" />
+          </div>
+          <div class="form-panel">
+            <label for="content">Mesaj</label>
+            <textarea name="content"></textarea>
+          </div>
           <input type="submit" class="btn-primary" value="GÖNDER" />
         </form>
       </div>

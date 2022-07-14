@@ -202,17 +202,49 @@ form {
       .events .event .content h1 {
         font-size: 2rem; }
 
-.contact-us form input:not(:last-child) {
-  margin-bottom: 1rem; }
-
-.contact-us form textarea {
-  height: 120px;
-  font-size: 1rem; }
-
-.contact-us .btn-primary {
-  align-self: center;
-  padding: 1rem 1.2rem;
-  cursor: pointer; }
+.contact-us .contact {
+  display: flex;
+  padding: 2rem 20px; }
+  .contact-us .contact-info {
+    background-color: #14c38e;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: #fff; }
+    .contact-us .contact-info .info-content {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+  .contact-us .contact form {
+    background-color: #fff;
+    padding: 1rem;
+    color: #14c38e;
+    flex: 1;
+    border-radius: 8px; }
+    .contact-us .contact form .form-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem; }
+    .contact-us .contact form input {
+      padding: 10px;
+      border: 2px solid #14c38e;
+      border-radius: 4px; }
+    .contact-us .contact form textarea {
+      height: 120px;
+      font-size: 1rem;
+      border: 2px solid #14c38e;
+      border-radius: 4px; }
+  .contact-us .contact .btn-primary {
+    align-self: center;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    border: none; }
 
 footer {
   text-align: center;
