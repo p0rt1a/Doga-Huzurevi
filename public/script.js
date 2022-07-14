@@ -1,5 +1,7 @@
 let main = document.getElementById("main");
 let sliderPointers = document.querySelector(".slider-pointers");
+let moreButton = document.getElementById("navbar-more-button");
+let moreNavbar = document.getElementById("more-navbar");
 let pointerList = [];
 
 let imageList = [
@@ -9,6 +11,14 @@ let imageList = [
 ];
 
 let index = -1;
+
+// moreButton.addEventListener("mouseover", () => {
+//   moreNavbar.style.display = "block";
+// });
+
+// moreButton.addEventListener("mouseout", () => {
+//   moreNavbar.style.display = "none";
+// });
 
 function slide(ind) {
   main.style.backgroundImage = `url(img/${imageList[ind]})`;

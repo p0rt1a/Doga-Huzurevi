@@ -48,8 +48,19 @@
   &-navbar {
     padding: 25px 0;
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: rgba(72, 145, 115, 0.7);
+
+    .more {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .more-navbar {
+        position: absolute;
+      }
+    }
 
     nav {
       display: flex;
