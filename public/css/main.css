@@ -120,15 +120,8 @@ form {
   .main-navbar {
     padding: 25px 0;
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: rgba(72, 145, 115, 0.7); }
-    .main-navbar .more {
-      display: flex;
-      flex-direction: column;
-      position: relative; }
-      .main-navbar .more .more-navbar {
-        position: absolute; }
     .main-navbar nav {
       display: flex;
       justify-content: space-between;
