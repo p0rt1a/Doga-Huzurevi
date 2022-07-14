@@ -2,6 +2,9 @@ let main = document.getElementById("main");
 let sliderPointers = document.querySelector(".slider-pointers");
 let pointerList = [];
 
+let moreButton = document.getElementById("more-button");
+let moreList = document.querySelector(".more-list");
+
 let imageList = [
   "alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg",
   "christopher-jolly-GqbU78bdJFM-unsplash.jpg",
@@ -15,6 +18,18 @@ function slide(ind) {
   clearSelectedPointer();
   sliderPointers.children[ind].classList.add("selected");
 }
+
+moreButton.addEventListener("mouseover", () => {
+  moreList.style.display = "flex";
+});
+
+moreList.addEventListener("mouseout", () => {
+  moreList.style.display = "none";
+});
+
+moreList.addEventListener("mouseover", () => {
+  moreList.style.display = "flex";
+});
 
 function clearSelectedPointer() {
   for (let i = 0; i < pointerList.length; i++) {
