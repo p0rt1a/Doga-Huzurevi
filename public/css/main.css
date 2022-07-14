@@ -236,6 +236,7 @@ form {
       border: 2px solid #14c38e;
       border-radius: 4px; }
     .contact-us .contact form textarea {
+      padding: 10px;
       height: 120px;
       font-size: 1rem;
       border: 2px solid #14c38e;
